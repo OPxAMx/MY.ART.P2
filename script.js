@@ -27,6 +27,34 @@ postActionsControllers.forEach((btn) => {
 
 // If the action content is opened, it is closed by clicking outside of it
 
+document.getElementById("anime").addEventListener("click", function() {
+  var maSection = document.getElementById("animeSection");
+  if (maSection.style.display === "none") {
+    maSection.style.display = "block";
+  } else {
+    maSection.style.display = "none";
+  }
+});
+
+document.getElementById("photorealism").addEventListener("click", function() {
+  var maSection = document.getElementById("photorealismSection");
+  if (maSection.style.display === "none") {
+    maSection.style.display = "block";
+  } else {
+    maSection.style.display = "none";
+  }
+});
+
+document.getElementById("art").addEventListener("click", function() {
+  var maSection = document.getElementById("artSection");
+  if (maSection.style.display === "none") {
+    maSection.style.display = "block";
+  } else {
+    maSection.style.display = "none";
+  }
+});
+
+
 function handleClickOutside(event) {
   postActionsControllers.forEach((btn) => {
     const targetId = btn.getAttribute("data-target");
